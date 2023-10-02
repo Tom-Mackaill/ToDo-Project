@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf9f6;
+}
+
+.container {
+    width: 600px;
+    height: 800px;
+    background-color: #fffdd0;
+    border-radius: 15px;
+    box-shadow: 7px 10px #888888;
+}
+
+.container-nav {
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.container-nav h3 {
+    text-align: center;
+}
+
+.container-main {
+    height: 700px;
+   
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form input {
+    text-align: center;
+    font-size: 30px;
+    border-style: none;
+}
+
+.form form {
+    text-align: center;
+   
+}
+
+.form button {
+    font-size: 26px;
+    border-style: none;
+}
+
+.list {
+    height: 80%;
+    font-size: 32px;
+    list-style: none;
+    padding: 15px;
+}
+
+p {
+    display: inline;
+}
+
+li {
+    padding: 5px;
+}
+
+
+.delete {
+    display: flex;
+    justify-content: right;
+}
+
+.delete button {
+    font-size: 30px;
+    border-style: none;
+}
+
+input:checked + p{
+    text-decoration: line-through;
+  }
+
+  .date {
+    text-align: center;
+    margin-top: 10px;
+  }

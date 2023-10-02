@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="date">
+            <% let date = new Date() %>
+            <%= date %>
+        </div>
+        <div class="container-nav">
+            <h3>ToDo List!</h3>
+        </div>
+
+        <div class="container-main">
+            <div class="form">
+                <form action="/addTask" method="post">
+                    <input type="text" name="newTask" placeholder="New Task." autocomplete="off" required>
+                    <button type="submit" name="list" value="date">Add</button>
+                </form>
+            </div>
+
+            <div class="list">
+                <% for (let i = 0; i < inputArray.length; i++) { %>
+                    <li>
+                        <input type="checkbox">
+                        <p><%= inputArray[i] %></p>
+                    </li>
+                <% } %>
+            </div>
+
+
+            <div class="delete">
+                
+                <form action="/removeTask" method="post">
+                    
+                    <button type="submit" class="annoying"> Remove Task. </button>
+    
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
